@@ -1,0 +1,43 @@
+{
+    "name": "stolt/composer-travis-lint",
+    "description": "Composer script to lint a Travis CI configuration file.",
+    "keywords": ["composer", "script", "travis", "ci", "lint", "validation"],
+    "homepage": "https://github.com/raphaelstolt/composer-travis-lint",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raphael Stolt",
+            "email": "raphael.stolt@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "composer/composer": "^1.0",
+        "friendsofphp/php-cs-fixer": "2.0.0-alpha",
+        "mockery/mockery": "^0.9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stolt\\Composer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stolt\\Composer\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "ctl:test": "phpunit --exclude-group integration",
+        "ctl:test-all": "phpunit",
+        "ctl:test-with-coverage": "phpunit --coverage-html coverage-reports",
+        "ctl:cs-fix": "php-cs-fixer fix . -vv || true",
+        "ctl:cs-lint": "php-cs-fixer fix --diff --verbose --dry-run"
+    }
+}
