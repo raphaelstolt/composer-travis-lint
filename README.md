@@ -24,7 +24,7 @@ Once installed add the Composer script to the existing `composer.json` and use i
 }
 ```
 
-On a first lint run the Composer script will create a cache file `.ctl.cache` to avoid making unnecessary lint requests against the [Travis CI API](https://docs.travis-ci.com/api#linting). This file should _prolly_ not be `.gitignored` but __defo__ be kept out of releases and therefore end up in the `.gitattributes` file.
+On a first lint run the Composer script will create a cache file called `.ctl.cache` to avoid making unnecessary lint requests against the [Travis CI API](https://docs.travis-ci.com/api#linting). This file should _prolly_ not be `.gitignored` but __defo__ be kept out of releases and therefore end up in the `.gitattributes` file.
 
 New `lint` requests will only be made when the Travis CI configuration file changes.
 
