@@ -2,7 +2,7 @@
 
 namespace Stolt\Composer\Tests;
 
-use PHPUnit\Framework\TestCase as PHPUnit;
+use PHPUnit_Framework_TestCase as PHPUnit;
 
 class TestCase extends PHPUnit
 {
