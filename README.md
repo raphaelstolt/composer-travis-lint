@@ -28,7 +28,7 @@ On a first lint run the Composer script will create a cache file called `.ctl.ca
 
 New `lint` requests will only be made when the Travis CI configuration file changes.
 
-#### Running tests without integration test
+#### Running tests without integration tests
 ``` bash
 composer ctl:test
 ```
