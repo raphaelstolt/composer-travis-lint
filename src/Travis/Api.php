@@ -67,7 +67,7 @@ class Api
 
         if (!isset($lintResult['lint']) || !isset($lintResult['lint']['warnings'])) {
             $message = 'Travis CI lint API responded '
-                . 'with non expected structure';
+                . 'with a non expected structure.';
 
             throw new NonExpectedReponseStructure($message);
         }

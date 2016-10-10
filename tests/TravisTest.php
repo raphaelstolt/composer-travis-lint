@@ -170,7 +170,7 @@ CONTENT;
         );
 
         $expectedErrorMessage = 'Travis CI lint API responded '
-                . 'with non expected structure';
+                . 'with a non expected structure.';
 
         $apiMock = Mockery::mock(
             'Stolt\Composer\Travis\Api[post]'
