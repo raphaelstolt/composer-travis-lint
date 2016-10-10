@@ -10,7 +10,7 @@ The `composer-travis-lint` is a Composer script that `lints` a project/micro-pac
 The Composer script should be installed as a development dependency through Composer.
 
 ``` bash
-composer global require --dev stolt/composer-travis-lint
+composer require --dev stolt/composer-travis-lint
 ```
 
 ## Usage
