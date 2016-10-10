@@ -10,6 +10,7 @@ class Api
 {
     const API_ENDPOINT = 'https://api.travis-ci.org/lint';
     const CURL_TIMEOUT_IN_SECONDS = 2;
+    const CURL_USERAGENT = 'composer-travis-lint';
 
     /**
      * @var resource
@@ -37,6 +38,7 @@ class Api
             'Content-Length: ' . strlen($travisConfiguration),
         ];
 
+        curl_setopt($this->curlChannel, CURLOPT_USERAGENT, self::CURL_USERAGENT);
         curl_setopt($this->curlChannel, CURLOPT_CUSTOMREQUEST, 'POST');
         curl_setopt($this->curlChannel, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($this->curlChannel, CURLOPT_CONNECTTIMEOUT, self::CURL_TIMEOUT_IN_SECONDS);
