@@ -84,7 +84,7 @@ class Travis
 
                 $bytesWritten = file_put_contents(
                     $composerTravisLintCache,
-                    md5($travisConfigContent)
+                    md5($travisConfigContent) . "\n"
                 );
 
                 if ($bytesWritten > 0) {

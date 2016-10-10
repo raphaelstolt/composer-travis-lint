@@ -267,6 +267,10 @@ CONTENT;
 
         $this->assertTrue(Travis::lint($eventMock, $apiMock));
         $this->assertComposerTravisLintCacheFileExists();
+        $this->assertEquals(
+            md5($travisConfiguration) . "\n",
+            $this->getComposerTravisLintCacheFileContent()
+        );
     }
 
     /**

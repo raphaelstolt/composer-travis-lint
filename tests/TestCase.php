@@ -92,7 +92,21 @@ class TestCase extends PHPUnit
             . DIRECTORY_SEPARATOR
             . '.ctl.cache';
 
-        file_put_contents($this->composerTravisLintCacheFile, md5($content));
+        file_put_contents($this->composerTravisLintCacheFile, md5($content) . "\n");
+    }
+
+    /**
+     * Get the .ctl.cache content.
+     *
+     * @return string
+     */
+    protected function getComposerTravisLintCacheFileContent()
+    {
+        $this->composerTravisLintCacheFile = $this->temporaryDirectory
+            . DIRECTORY_SEPARATOR
+            . '.ctl.cache';
+
+        return file_get_contents($this->composerTravisLintCacheFile);
     }
 
     /**
