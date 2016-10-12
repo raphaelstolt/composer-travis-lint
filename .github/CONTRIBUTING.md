@@ -1,6 +1,6 @@
 # How to contribute
 
-Thanks for considering to contribute to the `composer-travis-lint`. Please follow these simple guidelines:
+Thanks for considering to contribute to `composer-travis-lint`. Please follow these simple guidelines:
 
 - All code __MUST__ follow the PSR-2 coding standard. Please see [PSR-2](http://www.php-fig.org/psr/psr-2/) for more details.
 

@@ -4,7 +4,7 @@
 ![PHP Version](http://img.shields.io/badge/php-5.6+-ff69b4.svg)
 [![composer.lock available](https://poser.pugx.org/stolt/composer-travis-lint/composerlock)](https://packagist.org/packages/stolt/composer-travis-lint)
 
-The `composer-travis-lint` is a Composer script that `lints` a project/micro-package its [Travis CI](https://travis-ci.org/) configuration aka its `.travis.yml` file.
+`composer-travis-lint` is a Composer script that `lints` a project/micro-package its [Travis CI](https://travis-ci.org/) configuration aka its `.travis.yml` file.
 
 ## Installation
 The Composer script should be installed as a development dependency through Composer.
