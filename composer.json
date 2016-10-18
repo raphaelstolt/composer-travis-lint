@@ -1,7 +1,7 @@
 {
     "name": "stolt/composer-travis-lint",
     "description": "Composer script to lint a Travis CI configuration file.",
-    "keywords": ["composer", "script", "travis", "ci", "lint", "validation"],
+    "keywords": ["composer script", "travis ci", "lint", "validation"],
     "homepage": "https://github.com/raphaelstolt/composer-travis-lint",
     "license": "MIT",
     "authors": [
