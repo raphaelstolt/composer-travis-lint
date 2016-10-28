@@ -48,6 +48,7 @@ class Api
         curl_setopt($this->curlChannel, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($this->curlChannel, CURLOPT_URL, self::API_ENDPOINT);
         curl_setopt($this->curlChannel, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($this->curlChannel, CURLOPT_SSL_VERIFYPEER, false);
 
         $lintResult = curl_exec($this->curlChannel);
         $responseInfo = curl_getinfo($this->curlChannel);
