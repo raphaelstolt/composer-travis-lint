@@ -19,7 +19,7 @@ Once installed add the Composer script to the existing `composer.json` and use i
 ``` json
 {
     "scripts": {
-        "travis-lint":  "Stolt\\Composer\\Travis::lint"
+        "travis-lint": "Stolt\\Composer\\Travis::lint"
     },
 }
 ```
