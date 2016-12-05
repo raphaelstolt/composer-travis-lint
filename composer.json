@@ -20,7 +20,7 @@
     },
     "require-dev": {
         "composer/composer": "^1.0",
-        "friendsofphp/php-cs-fixer": "2.0.0-alpha",
+        "friendsofphp/php-cs-fixer": "^2.0",
         "mockery/mockery": "^0.9.5",
         "phpunit/phpunit": "^4.8 || ^5.0"
     },
