@@ -11,7 +11,7 @@ matrix:
       group: edge
     - php: nightly
     - php: 7.1
-      env: LINT=true
+      env: LINT=true VALIDATE_GITATTRIBUTES=true
     - php: 7.0
     - php: 5.6
   fast_finish: true
@@ -38,6 +38,9 @@ script:
   # Verify coding standard compliance only once
   - if [[ $LINT = true ]]; then
       composer ctl:cs-lint;
+    fi
+  - if [[ $VALIDATE_GITATTRIBUTES = true ]]; then
+      composer ctl:gitattributes-validation;
     fi
   - if [[ $(( $TRAVIS_BUILD_NUMBER % 25 )) = 0 ]]; then
       composer ctl:test-all;
