@@ -5,7 +5,7 @@ git:
 
 matrix:
   include:
-    - php: hhvm-3.9
+    - php: hhvm
       sudo: required
       dist: trusty
       group: edge
